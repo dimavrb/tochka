@@ -26,6 +26,7 @@ public class TestBase {
         Configuration.browserSize = browserSize;
         Configuration.baseUrl = "https://tochka.com";
         Configuration.remote = remote;
+        Configuration.timeout = 10000;
         Configuration.browserVersion = browserVersion;
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(

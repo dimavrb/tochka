@@ -29,7 +29,7 @@ public class LoginPageTests extends TestBase {
     }
     @Test
     @Tag("Smoke")
-    @DisplayName("Проверка ввода неправильного логина/пароля")
+    @DisplayName("Проверка перехода к форме восстановления пароля")
     public void checkRecoveryForm() {
 
         step("Переход к странице авторизации", () ->mainPage.clickLoginButton());
