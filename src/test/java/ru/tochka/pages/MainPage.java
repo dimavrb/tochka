@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class MainPage {
 
-    public SelenideElement mainPageLogo = $(".header_header__wrap__zZ_Md"),
+    public SelenideElement mainPageLogo = $(".header_header__container__JNNVt"),
     mainPageMenuRegistration = $(byText("Регистрация бизнеса")),
     mainPageMenuBank = $(byText("Банк")),
     mainPageMenuService = $(byText("Сервисы")),

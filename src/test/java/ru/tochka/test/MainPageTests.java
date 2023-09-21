@@ -25,7 +25,7 @@ public class MainPageTests extends TestBase {
 
 
     @Test
-    @Tag("Smoke")
+    @Tag("Regress")
     @DisplayName("Проверка наличия меню")
     public void goToAppicationForm() {
 
@@ -36,7 +36,7 @@ public class MainPageTests extends TestBase {
     }
 
     @Test
-    @Tag("Smoke")
+    @Tag("Regress")
     @DisplayName("Проверка перехода к странице авторизации")
     public void goToLoginPage() {
 
@@ -48,7 +48,7 @@ public class MainPageTests extends TestBase {
     }
 
     @Test
-    @Tag("Smoke")
+    @Tag("Regress")
     @DisplayName("Проверка перехода к форме Оставить заявку")
     public void goToRegistrationForm() {
 
