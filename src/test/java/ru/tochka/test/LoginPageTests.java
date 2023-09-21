@@ -1,5 +1,6 @@
 package ru.tochka.test;
 
+import com.codeborne.selenide.Condition;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -7,8 +8,8 @@ import ru.tochka.pages.LoginPage;
 import ru.tochka.pages.MainPage;
 import ru.tochka.pages.TestBase;
 
+
 import static io.qameta.allure.Allure.step;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class LoginPageTests extends TestBase {
 
@@ -24,7 +25,7 @@ public class LoginPageTests extends TestBase {
         step("Ввод логина", () ->(loginPage.setLogin()));
         step("Ввод пароля", () ->(loginPage.setPassword()));
         step("Нажатие кнопки входа", () ->loginPage.clickSubmitButton());
-        step("Проверка баннера о неверных данных", () ->assertTrue(loginPage.failBanner.exists()));
+        step("Проверка баннера о неверных данных", () ->loginPage.failBanner.shouldBe(Condition.visible));
 
     }
     @Test
@@ -34,7 +35,7 @@ public class LoginPageTests extends TestBase {
 
         step("Переход к странице авторизации", () ->mainPage.clickLoginButton());
         step("Нажатие кнопки восстановлния пароля", () ->(loginPage.clickRecoveryFormButton()));
-        step("Проверка открытия формы восстановления пароля", () ->assertTrue(loginPage.bannerRecoveryForm.exists()));
+        step("Проверка открытия формы восстановления пароля", () ->loginPage.bannerRecoveryForm.shouldBe(Condition.visible));
 
     }
 
