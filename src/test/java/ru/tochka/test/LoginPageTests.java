@@ -41,3 +41,6 @@ public class LoginPageTests extends TestBase {
 
 
 }
+
+//команда для запуска локально gradle test -Denv=local
+//команда для запуска удаленно gradle test -Denv=remote
