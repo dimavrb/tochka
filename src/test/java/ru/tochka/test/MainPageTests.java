@@ -10,7 +10,7 @@ import ru.tochka.pages.LoginPage;
 
 
 import static io.qameta.allure.Allure.step;
-
+@DisplayName("Тесты главной страницы")
 public class MainPageTests extends TestBase {
     MainPage mainPage = new MainPage();
     LoginPage loginPage = new LoginPage();

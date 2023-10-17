@@ -10,7 +10,7 @@ import ru.tochka.pages.TestBase;
 
 
 import static io.qameta.allure.Allure.step;
-
+@DisplayName("Тесты страницы авторизации")
 public class LoginPageTests extends TestBase {
 
 
