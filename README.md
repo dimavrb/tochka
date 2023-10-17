@@ -41,7 +41,7 @@ ____
 ### Команда для запуска из терминала
 `gradle clean test -Denv=remote`
 
-## Allure Report
+## Allure отчет
 
 ### Главная страница отчета
 ![](https://github.com/dimavrb/tochka/blob/main/screenshots/AllureReport.png)
@@ -50,11 +50,11 @@ ____
 
 ![](https://github.com/dimavrb/tochka/blob/main/screenshots/Тест-кейс.png)
 
-## Уведомление в Telegram
+## Уведомление в Telegram при помощи бота
 
 ![](https://github.com/dimavrb/tochka/blob/main/screenshots/telegram.png)
 
-## Пример видео выполнения теста
+## Примеры видео выполнения тестов на Selenoid
 
 ![](https://github.com/dimavrb/tochka/blob/main/screenshots/testcase.gif)
 
