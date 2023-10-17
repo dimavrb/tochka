@@ -33,14 +33,12 @@ ____
 
 ![](https://github.com/dimavrb/tochka/blob/main/screenshots/Jenkins.png)
 
-### Параметры сборки в Jenkins:
-- browser (браузер, по умолчанию chrome)
-- browserVersion (версия браузера, по умолчанию 100.0)
-- browserSize (размер окна браузера, по умолчанию 1920x1080)
 
-### Команда для запуска из терминала
+### Команда для запуска с использованием Selenide
 `gradle clean test -Denv=remote`
 
+### Команда для локального запуска
+`gradle clean test -Denv=local`
 ## Allure отчет
 
 ### Главная страница отчета
