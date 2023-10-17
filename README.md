@@ -34,7 +34,7 @@ ____
 ![](https://github.com/dimavrb/tochka/blob/main/screenshots/Jenkins.png)
 
 
-### Команда для запуска с использованием Selenide
+### Команда для запуска с использованием selenoid
 `gradle clean test -Denv=remote`
 
 ### Команда для локального запуска
