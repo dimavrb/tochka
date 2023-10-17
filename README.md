@@ -3,44 +3,45 @@
 
 ## Содержание
 
-### Технологии и инструменты
-### Список проверок, реализованных в тестах
-### Запуск тестов (сборка в Jenkins) и из терминала
-### Allure-отчет
-### Интеграция с Allure TestOps
-### Интеграция с Atlassian Jira
-### Уведомление в Telegram о результатах прогона тестов
-### Видео пример прохождения тестов
+- [Технологии и инструменты](#Технологии-и-инструменты)
+- [Примеры автоматизированных тест-кейсов](#Примеры-автоматизированных-тест-кейсов)
+- [Сборка в Jenkins](#Сборка-в-Jenkins)
+- [Allure отчет](#Allure-отчет)
+- [Уведомление в Telegram при помощи бота](#Уведомление-в-Telegram-при-помощи-бота)
+- [Примеры видео выполнения тестов на Selenoid](#Примеры-видео-выполнения-тестов-на-Selenoid)
+
+
 
 ## Технологии и инструменты
-
 
 | Java  | IDEA | Github | JUnit 5 | Gradle | Selenide | Selenoid | Allure | Jenkins |
 | ----- | ---- | ------ | ------- | ------ | -------- | -------- | ------ | ------- |
 |[![](https://github.com/dimavrb/tochka/blob/main/logo/Java.svg)](java.com) | ![](https://github.com/dimavrb/tochka/blob/main/logo/Idea.svg) | ![](https://github.com/dimavrb/tochka/blob/main/logo/GitHub.svg) | ![](https://github.com/dimavrb/tochka/blob/main/logo/Junit5.svg)  | ![](https://github.com/dimavrb/tochka/blob/main/logo/Gradle.svg)  | ![](https://github.com/dimavrb/tochka/blob/main/logo/Selenide.svg)  | ![](https://github.com/dimavrb/tochka/blob/main/logo/Selenide.svg)  | ![](https://github.com/dimavrb/tochka/blob/main/logo/Allure.svg) | ![](https://github.com/dimavrb/tochka/blob/main/logo/Jenkins.svg)  |
 
-## Список проверок, реализованных в тестах
+____
+## Примеры автоматизированных тест-кейсов
 
-### Авторизация. Проверка ввода неправильного логина/пароля
-### Авторизация. Проверка перехода к форме восстановления пароля
-### Главная страница. Проверка загрузки главной страницы
-### Главная страница. Проверка наличия меню
-### Главная страница. Проверка перехода к странице авторизации
-### Главная страница. Проверка перехода к форме Оставить заявку
+- Авторизация. Проверка ввода неправильного логина/пароля
+-  Авторизация. Проверка перехода к форме восстановления пароля
+-  Главная страница. Проверка загрузки главной страницы
+-  Главная страница. Проверка наличия меню
+-  Главная страница. Проверка перехода к странице авторизации
+-  Главная страница. Проверка перехода к форме Оставить заявку
+____
 
 ## Сборка в Jenkins
 
 ![](https://github.com/dimavrb/tochka/blob/main/screenshots/Jenkins.png)
 
-## Параметры сборки в Jenkins:
+### Параметры сборки в Jenkins:
 - browser (браузер, по умолчанию chrome)
 - browserVersion (версия браузера, по умолчанию 100.0)
 - browserSize (размер окна браузера, по умолчанию 1920x1080)
 
-## Команда для запуска из терминала
+### Команда для запуска из терминала
 `gradle clean test -Denv=remote`
 
-## Allure Report 
+## Allure Report
 
 ### Главная страница отчета
 ![](https://github.com/dimavrb/tochka/blob/main/screenshots/AllureReport.png)
@@ -55,5 +56,6 @@
 
 ## Пример видео выполнения теста
 
-![](https://github.com/dimavrb/tochka/blob/main/screenshots/test%20case.mp4)
+![](https://github.com/dimavrb/tochka/blob/main/screenshots/testcase.gif)
+
 
