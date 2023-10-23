@@ -20,7 +20,7 @@ public interface WebConfig extends Config {
     String getBrowserSize();
 
     @Key("baseUrl")
-    @DefaultValue("https://tochka.com")
+    @DefaultValue("https://tochka.com/")
     String getBaseUrl();
 
     @Key("isRemote")

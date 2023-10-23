@@ -5,7 +5,6 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ru.tochka.pages.MainPage;
-import ru.tochka.pages.TestBase;
 import ru.tochka.pages.LoginPage;
 
 
@@ -20,7 +19,7 @@ public class MainPageTests extends TestBase {
     @DisplayName("Проверка загрузки главной страницы")
     public void loadMainPage() {
 
-        step("Проверка логотипа на главной странице", () ->mainPage.mainPageLogo.shouldBe(Condition.visible));
+        step("Проверка логотипа на главной странице", () ->mainPage.checkLogoVisibility());
 
     }
 
@@ -30,10 +29,10 @@ public class MainPageTests extends TestBase {
     @DisplayName("Проверка наличия меню")
     public void goToAppicationForm() {
 
-        step("Проверка раскрывающегося меню Регистрация бизнеса", () ->mainPage.mainPageMenuRegistration.shouldBe(Condition.visible));
-        step("Проверка раскрывающегося меню Банк", () ->mainPage.mainPageMenuBank.shouldBe(Condition.visible));
-        step("Проверка раскрывающегося Сервисы", () ->mainPage.mainPageMenuService.shouldBe(Condition.visible));
-        step("Проверка раскрывающегося О нас", () ->mainPage.mainPageMenuAbout.shouldBe(Condition.visible));
+        step("Проверка раскрывающегося меню Регистрация бизнеса", () ->mainPage.checkMenuRegistrationVisibility());
+        step("Проверка раскрывающегося меню Банк", () ->mainPage.checkMenuBankVisibility());
+        step("Проверка раскрывающегося Сервисы", () ->mainPage.checkMenuServiceVisibility());
+        step("Проверка раскрывающегося О нас", () ->mainPage.checkMenuAboutVisibility());
     }
 
     @Test
@@ -42,9 +41,9 @@ public class MainPageTests extends TestBase {
     public void goToLoginPage() {
 
         step("Нажатие кнопки Войти", () ->mainPage.clickLoginButton());
-        step("Проверка кнопки Связаться", () ->loginPage.callButton.shouldBe(Condition.visible));
-        step("Проверка поля ввода номера телефона", () ->loginPage.phoneInput.shouldBe(Condition.visible));
-        step("Проверка поля ввода пароля", () ->loginPage.passwordInput.shouldBe(Condition.visible));
+        step("Проверка кнопки Связаться", () ->loginPage.checkCallButtonVisibility());
+        step("Проверка поля ввода номера телефона", () ->loginPage.checkPhoneInputVisibility());
+        step("Проверка поля ввода пароля", () ->loginPage.checkPasswordInputVisibility());
 
     }
 
@@ -54,7 +53,7 @@ public class MainPageTests extends TestBase {
     public void goToRegistrationForm() {
 
         step("Переход к форме регистрации", () ->mainPage.goToApplicationForm());
-        step("Проверка отображения формы регистрации", () ->mainPage.applicationForm.shouldBe(Condition.visible));
+        step("Проверка отображения формы регистрации", () ->mainPage.checkApplicationFormVisibility());
     }
 
 

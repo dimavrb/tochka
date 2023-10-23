@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ru.tochka.pages.LoginPage;
 import ru.tochka.pages.MainPage;
-import ru.tochka.pages.TestBase;
 
 
 import static io.qameta.allure.Allure.step;
@@ -25,7 +24,7 @@ public class LoginPageTests extends TestBase {
         step("Ввод логина", () ->(loginPage.setLogin()));
         step("Ввод пароля", () ->(loginPage.setPassword()));
         step("Нажатие кнопки входа", () ->loginPage.clickSubmitButton());
-        step("Проверка баннера о неверных данных", () ->loginPage.failBanner.shouldBe(Condition.visible));
+        step("Проверка баннера о неверных данных", () ->loginPage.checkFailBannerVisibility());
 
     }
     @Test
@@ -35,12 +34,9 @@ public class LoginPageTests extends TestBase {
 
         step("Переход к странице авторизации", () ->mainPage.clickLoginButton());
         step("Нажатие кнопки восстановлния пароля", () ->(loginPage.clickRecoveryFormButton()));
-        step("Проверка открытия формы восстановления пароля", () ->loginPage.bannerRecoveryForm.shouldBe(Condition.visible));
+        step("Проверка открытия формы восстановления пароля", () ->loginPage.checkBannerRecoveryFormVisibility());
 
     }
 
 
 }
-
-//команда для запуска локально gradle test -Denv=local
-//команда для запуска удаленно gradle test -Denv=remote

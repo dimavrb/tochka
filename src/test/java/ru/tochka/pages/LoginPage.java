@@ -1,5 +1,6 @@
 package ru.tochka.pages;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Selectors.*;
@@ -39,6 +40,29 @@ public class LoginPage {
     public LoginPage clickRecoveryFormButton(){
 
         recoveryPassButton.click();
+        return this;
+    }
+    public LoginPage checkCallButtonVisibility(){
+        callButton.shouldBe(Condition.visible);
+        return this;
+    }
+
+    public LoginPage checkPhoneInputVisibility(){
+        phoneInput.shouldBe(Condition.visible);
+        return this;
+    }
+    public LoginPage checkPasswordInputVisibility(){
+        passwordInput.shouldBe(Condition.visible);
+        return this;
+    }
+
+    public LoginPage checkFailBannerVisibility(){
+        failBanner.shouldBe(Condition.visible);
+        return this;
+    }
+
+    public LoginPage checkBannerRecoveryFormVisibility(){
+        bannerRecoveryForm.shouldBe(Condition.visible);
         return this;
     }
 }

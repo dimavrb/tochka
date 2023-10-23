@@ -1,4 +1,4 @@
-package ru.tochka.pages;
+package ru.tochka.test;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
 import ru.tochka.config.ConfigReader;
@@ -10,9 +10,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import io.qameta.allure.selenide.AllureSelenide;
 
-import static com.codeborne.selenide.Selenide.closeWindow;
-import static com.codeborne.selenide.Selenide.open;
-
+import static com.codeborne.selenide.Selenide.*;
 
 
 public class TestBase {
@@ -26,7 +24,7 @@ public class TestBase {
     @BeforeEach
     void beforeEach() {
         SelenideLogger.addListener("allure", new AllureSelenide());
-        open("/");
+        open("");
     }
 
     @AfterEach
@@ -35,7 +33,7 @@ public class TestBase {
         Attach.pageSource();
         Attach.browserConsoleLogs();
         Attach.addVideo();
-        closeWindow();
+        closeWebDriver();
     }
 
 }
