@@ -1,2 +1,0 @@
-[2023-09-20T19:23:38.072Z] [SEVERE] https://i.tochka.com/api/v1/auth/v2/ping - Failed to load resource: the server responded with a status of 401 ()
-[2023-09-20T19:23:38.893Z] [SEVERE] https://id.tochka.com/api/v1/auth/v3/private - Failed to load resource: the server responded with a status of 401 ()

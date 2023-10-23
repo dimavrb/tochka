@@ -1,1 +1,0 @@
-[2023-09-20T19:24:54.798Z] [WARNING] https://tochka.com/ - [.WebGL-0x1ec200374d00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
