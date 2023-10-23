@@ -15,6 +15,7 @@ public class MainPageTests extends TestBase {
 
     @Test
     @Tag("Smoke")
+    @Tag("Regress")
     @DisplayName("Проверка загрузки главной страницы")
     public void loadMainPage() {
 

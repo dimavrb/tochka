@@ -16,6 +16,7 @@ public class LoginPageTests extends TestBase {
     MainPage mainPage = new MainPage();
     @Test
     @Tag("Smoke")
+    @Tag("Regress")
     @DisplayName("Проверка ввода неправильного логина/пароля")
     public void failAuth() {
 
@@ -28,6 +29,7 @@ public class LoginPageTests extends TestBase {
     }
     @Test
     @Tag("Smoke")
+    @Tag("Regress")
     @DisplayName("Проверка перехода к форме восстановления пароля")
     public void checkRecoveryForm() {
 
