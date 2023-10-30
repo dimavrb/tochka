@@ -17,7 +17,7 @@
 
 | Java  | IDEA | Github | JUnit 5 | Gradle | Selenide | Selenoid | Allure | Jenkins |
 | ----- | ---- | ------ | ------- | ------ | -------- | -------- | ------ | ------- |
-|[![](https://github.com/dimavrb/tochka/blob/main/logo/Java.svg)](java.com) | ![](https://github.com/dimavrb/tochka/blob/main/logo/Idea.svg) | ![](https://github.com/dimavrb/tochka/blob/main/logo/GitHub.svg) | ![](https://github.com/dimavrb/tochka/blob/main/logo/Junit5.svg)  | ![](https://github.com/dimavrb/tochka/blob/main/logo/Gradle.svg)  | ![](https://github.com/dimavrb/tochka/blob/main/logo/Selenide.svg)  | ![](https://github.com/dimavrb/tochka/blob/main/logo/Selenide.svg)  | ![](https://github.com/dimavrb/tochka/blob/main/logo/Allure.svg) | ![](https://github.com/dimavrb/tochka/blob/main/logo/Jenkins.svg)  |
+|[![](https://github.com/dimavrb/tochka/blob/main/media/logo/Java.svg)](java.com) | ![](https://github.com/dimavrb/tochka/blob/main/media/logo/Idea.svg) | ![](https://github.com/dimavrb/tochka/blob/main/media/logo/GitHub.svg) | ![](https://github.com/dimavrb/tochka/blob/main/media/logo/Junit5.svg)  | ![](https://github.com/dimavrb/tochka/blob/main/media/logo/Gradle.svg)  | ![](https://github.com/dimavrb/tochka/blob/main/media/logo/Selenide.svg)  | ![](https://github.com/dimavrb/tochka/blob/main/media/logo/Selenide.svg)  | ![](https://github.com/dimavrb/tochka/blob/main/media/logo/Allure.svg) | ![](https://github.com/dimavrb/tochka/blob/main/media/logo/Jenkins.svg)  |
 
 ## Список реализованных проверок
 
