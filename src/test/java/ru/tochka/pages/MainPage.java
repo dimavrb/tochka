@@ -15,8 +15,8 @@ public class MainPage {
     mainPageMenuService = $("header").$(byText("Сервисы")),
     mainPageMenuAbout = $("header").$(byText("О нас")),
     loginButton = $("header").$(byText("Войти")),
-    applicationFormButton = $("$__1-block_firstBlock__eG7o_").$(byText("Стать клиентом")),
-    applicationForm = $("#11block-index-page").$(byText("Пора открывать счёт"));
+    applicationFormButton = $(".wrapper").$(byText("Стать клиентом")),
+    applicationForm = $(".widget__link widget__link--1");
 
 
     public MainPage clickLoginButton(){

@@ -49,11 +49,11 @@ public class MainPageTests extends TestBase {
 
     @Test
     @Tag("Regress")
-    @DisplayName("Проверка перехода к форме Оставить заявку")
+    @DisplayName("Проверка перехода к форме Оставить заявку. Тест специально фейлится, из-за появления окна с акцией")
     public void goToRegistrationForm() {
 
         step("Переход к форме регистрации", () ->mainPage.goToApplicationForm());
-        step("Проверка отображения формы регистрации", () ->mainPage.checkApplicationFormVisibility());
+        step("Проверка отображения формы регистрации.", () ->mainPage.checkApplicationFormVisibility());
     }
 
 
