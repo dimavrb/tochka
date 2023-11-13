@@ -30,7 +30,7 @@
 
 ## Сборка в Jenkins
 
-![](https://github.com/dimavrb/tochka/blob/main/screenshots/Jenkins.png)
+![](https://github.com/dimavrb/tochka/blob/main/media/screenshots/Jenkins.png)
 
 ## Параметры сборки в Jenkins:
 - browser (браузер, по умолчанию chrome)
@@ -43,17 +43,17 @@
 ## Allure Report 
 
 ### Главная страница отчета
-![](https://github.com/dimavrb/tochka/blob/main/screenshots/AllureReport.png)
+![](https://github.com/dimavrb/tochka/blob/main/media/screenshots/AllureReport.png)
 
 ### Страница с тест-кейсами
 
-![](https://github.com/dimavrb/tochka/blob/main/screenshots/Тест-кейс.png)
+![](https://github.com/dimavrb/tochka/blob/main/media/screenshots/Тест-кейс.png)
 
 ## Уведомление в Telegram
 
-![](https://github.com/dimavrb/tochka/blob/main/screenshots/telegram.png)
+![](https://github.com/dimavrb/tochka/blob/main/media/screenshots/telegram.png)
 
 ## Пример видео выполнения теста
 
-![](https://github.com/dimavrb/tochka/blob/main/screenshots/test%20case.mp4)
+![](https://github.com/dimavrb/tochka/blob/main/media/screenshots/test%20case.mp4)
 
