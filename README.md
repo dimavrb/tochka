@@ -1,17 +1,21 @@
-# Демопроект по автоматизации тестирования сайта tochka.com
+#  
+<h1 >Демопроект по автоматизации тестирования UI сайта <a href="https://tochka.com/">tochka.com</a></h1>
 
+## :page_with_curl: Содержание 
 
-## Содержание
+* <a href="#tools">Технологии и инструменты</a>
 
-### Технологии и инструменты
-### Список реализованных проверок
-### Запуск тестов (сборка в Jenkins) и из терминала
-### Allure-отчет
-### Интеграция с Allure TestOps
-### Интеграция с Atlassian Jira
-### Уведомление в Telegram о результатах прогона тестов
-### Видео пример прохождения тестов
+* <a href="#cases">Список реализованных проверок</a>
 
+* <a href="#console">Запуск тестов (сборка в Jenkins) и из терминала</a>
+
+* <a href="#allure">Allure-отчет</a>
+
+* <a href="#telegram">Уведомление в Telegram о результатах прогона тестов</a>
+
+* <a href="#video">Видео пример прохождения тестов</a>
+
+<a id="tools"></a>
 ## Технологии и инструменты
 
 
@@ -19,6 +23,7 @@
 | ----- | ---- | ------ | ------- | ------ | -------- | -------- | ------ | ------- |
 |[![](https://github.com/dimavrb/tochka/blob/main/media/logo/Java.svg)](java.com) | ![](https://github.com/dimavrb/tochka/blob/main/media/logo/Idea.svg) | ![](https://github.com/dimavrb/tochka/blob/main/media/logo/GitHub.svg) | ![](https://github.com/dimavrb/tochka/blob/main/media/logo/Junit5.svg)  | ![](https://github.com/dimavrb/tochka/blob/main/media/logo/Gradle.svg)  | ![](https://github.com/dimavrb/tochka/blob/main/media/logo/Selenide.svg)  | ![](https://github.com/dimavrb/tochka/blob/main/media/logo/Selenide.svg)  | ![](https://github.com/dimavrb/tochka/blob/main/media/logo/Allure.svg) | ![](https://github.com/dimavrb/tochka/blob/main/media/logo/Jenkins.svg)  |
 
+<a id="cases"></a>
 ## Список реализованных проверок
 
 ### Авторизация. Проверка ввода неправильного логина/пароля
@@ -28,6 +33,7 @@
 ### Главная страница. Проверка перехода к странице авторизации
 ### Главная страница. Проверка перехода к форме Оставить заявку
 
+<a id="console"></a>
 ## Сборка в Jenkins
 
 ![](https://github.com/dimavrb/tochka/blob/main/media/screenshots/Jenkins.png)
@@ -40,6 +46,7 @@
 ## Команда для запуска из терминала
 `gradle clean test -Denv=remote`
 
+<a id="allure"></a>
 ## Allure Report 
 
 ### Главная страница отчета
@@ -49,10 +56,12 @@
 
 ![](https://github.com/dimavrb/tochka/blob/main/media/screenshots/Тест-кейс.png)
 
+<a id="telegram"></a>
 ## Уведомление в Telegram
 
 ![](https://github.com/dimavrb/tochka/blob/main/media/screenshots/telegram.png)
 
+<a id="video"></a>
 ## Пример видео выполнения теста
 
 ![](https://github.com/dimavrb/tochka/blob/main/media/screenshots/test%20case.mp4)
