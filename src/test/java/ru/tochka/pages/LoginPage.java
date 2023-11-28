@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$;
 public class LoginPage {
 
 
-    public SelenideElement
+    private final SelenideElement
             callButton = $(by("data-at","CellOffset")),
             phoneInput = $(byName("login")),
             passwordInput = $(byName("password")),
