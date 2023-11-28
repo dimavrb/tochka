@@ -64,5 +64,5 @@
 <a id="video"></a>
 ## Пример видео выполнения теста
 
-![](https://github.com/dimavrb/tochka/blob/main/media/screenshots/test%20case.mp4)
+![](https://github.com/dimavrb/tochka/blob/main/media/screenshots/testcase.gif)
 
