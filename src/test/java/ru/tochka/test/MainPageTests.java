@@ -3,6 +3,8 @@ package ru.tochka.test;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 import ru.tochka.pages.MainPage;
 import ru.tochka.pages.LoginPage;
 
@@ -24,15 +26,17 @@ public class MainPageTests extends TestBase {
     }
 
 
-    @Test
+    @ParameterizedTest(name = "{displayName} [{0}]")
     @Tag("Regress")
-    @DisplayName("Проверка наличия меню")
-    public void goToAppicationForm() {
-
-        step("Проверка раскрывающегося меню Регистрация бизнеса", () ->mainPage.checkMenuRegistrationVisibility());
-        step("Проверка раскрывающегося меню Банк", () ->mainPage.checkMenuBankVisibility());
-        step("Проверка раскрывающегося Сервисы", () ->mainPage.checkMenuServiceVisibility());
-        step("Проверка раскрывающегося О нас", () ->mainPage.checkMenuAboutVisibility());
+    @CsvSource(value =
+            {"Проверка раскрывающегося меню Регистрация бизнеса, mainPage.checkMenuRegistrationVisibility()",
+            "Проверка раскрывающегося меню Банк, mainPage.checkMenuBankVisibility())",
+            "Проверка раскрывающегося Сервисы, mainPage.checkMenuServiceVisibility()",
+            "Проверка раскрывающегося О нас, mainPage.checkMenuAboutVisibility())"
+            })
+    @DisplayName("Проверка наличия меню ")
+    public void goToApplicationForm(String name, String element) {
+        step(name, () ->element);
     }
 
     @Test
